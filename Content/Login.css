@@ -1,0 +1,56 @@
+﻿body{
+    background-color: orange;
+}
+.card_login {
+    background-color: rgba(0,154,168,0.5);
+    width: 40%;
+    height: 80%;
+    margin: auto;
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px;
+    color: rgb(94, 108, 132);
+}
+
+    .card_login .logo {
+        width: 50%;
+        height: auto;
+        margin: auto;
+    }
+
+    .card_login img {
+        width: 100%;
+    }
+
+    .card_login h2 {
+        display: block;
+        margin: 2rem 0;
+        text-align: center;
+        color: white;
+        font-weight: 600;
+    }
+
+    .card_login label {
+        color: white;
+    }
+
+    .card_login .btn {
+        display: block;
+        margin: 2rem auto;
+        border: 1.5px solid white;
+        color: white;
+        font-weight: 700;
+        width: 85%;
+    }
+
+        .card_login .btn:hover {
+            background-color: #0099A8;
+            color: white;
+            border-color: #0099A8;
+        }
+
+    .card_login #exampleInputEmail1, #exampleInputPassword1 {
+        border-radius: 0px;
+        width: 85%;
+        margin: auto;
+    }

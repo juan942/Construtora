@@ -1,0 +1,139 @@
+﻿
+.title {
+    display: block;
+    background-color: gainsboro;
+    color: darkorange;
+    padding-left: 2rem;
+    padding-top: 1rem;
+}
+
+.formulario {
+    display: grid;
+    grid-template-areas: "title1 title1" "form form" "title2 title2" "actualizaT eliminar" "proyectos proyectos";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5,auto);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    color: darkorange;
+}
+
+.title1 {
+    grid-area: title1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 0;
+    background-color: aliceblue;
+}
+
+.actualizaT {
+    grid-area: actualizaT;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 0;
+    background-color: aliceblue;
+}
+
+.eliminar {
+    grid-area: eliminar;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 0;
+    background-color: aliceblue;
+}
+
+.form {
+    grid-area: form;
+    display:grid;
+    grid-template-areas: "calendario calendario" "inputEncargado inputPropietario" "inputNombre inputDireccion" "Btn-send Btn-send";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 90px 90px 90px;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+            .calendario {
+                grid-area: calendario;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                padding: 2rem 0;
+            }
+
+            .inputEncargado {
+                grid-area: inputEncargado;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                padding: 2rem 0;
+            }
+
+            .inputPropietario {
+                grid-area: inputPropietario;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                padding: 2rem 0;
+            }
+            .inputNombre {
+                grid-area: inputNombre;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                padding: 2rem 0;
+            }
+            .inputDireccion {
+                grid-area: inputDireccion;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                padding: 2rem 0;
+            }
+
+            .Btn-send {
+                grid-area: Btn-send;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                padding: 2rem 0;
+            }
+
+.proyectos {
+    grid-area: proyectos;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 0;
+    overflow: auto;
+}
+
+.title2 {
+    grid-area: title2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 0;
+    background-color: aliceblue;
+}
+
+
+tr th {
+    text-align: center !important;
+}
+
+td {
+    text-align: center !important;
+}

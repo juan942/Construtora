@@ -1,0 +1,117 @@
+﻿*{
+    margin: 0;
+}
+#Logo{
+    width: 90px;
+    display: block;
+    margin: 5rem auto;
+}
+
+#page {
+    display: grid;
+    grid-template-areas: "navbar bodypage"
+                        "navbar footer";
+    grid-template-columns: 20% 80%;
+    grid-template-rows: auto auto;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+/* Estilos del menu principal */
+#page .navbar {
+    grid-area: navbar;
+    background-color: black;
+    height: 100vh;
+    border: 1px transparent;
+    overflow: hidden;
+    align-items: center;
+    color: white;
+    position: fixed;
+    top: 0;
+}
+}
+
+#Logo {
+    display: block;
+    text-align: center;
+    margin: 2em 0;
+}
+
+#Logo_img {
+    width: 60%;
+    margin-top: 6rem;
+}
+
+#profile {
+    display: block;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 3rem;
+}
+#img_profile{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 5rem;
+}
+
+#profile h5 {
+    font-size: 1.4em;
+    margin: 0.3em auto;
+}
+
+#profile h6 {
+    font-size: 1em;
+    margin: 0.1em auto;
+}
+#profile .logout {
+    display: none;
+    margin-top: 1rem;
+    text-decoration: underline;
+}
+
+#profile:hover .logout, .logout:hover {
+    display: block;
+    color: white;
+    cursor: pointer;
+}
+
+#Menu{
+    margin-top: 5rem;
+}
+
+#Menu ul li {
+    text-decoration: none;
+    list-style: none;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+#Menu ul li a {
+    font-size: 1em;
+    color: gainsboro;
+    width: 100%;
+    display: block;
+    width: 100%;
+    padding: 0.3em 0.5em;
+    transition: transform .2s;
+}
+
+#Menu a:hover {
+    transform: scale(1.2);
+    color: darkorange;
+    text-decoration: none;
+    border-left: 3px solid darkorange;
+}
+
+
+    /* Estilos del cuerpo */
+#page .bodypage {
+    grid-area: bodypage;
+    min-height: 95vh;
+}
+
+#page footer {
+    grid-area: footer;
+    text-align:center;
+}

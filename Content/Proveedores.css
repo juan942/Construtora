@@ -1,0 +1,127 @@
+﻿.title {
+    display: block;
+    background-color: gainsboro;
+    color: darkorange;
+    padding-left: 2rem;
+    padding-top: 1rem;
+    height: 50px;
+}
+
+h2 {
+    margin: 0;
+}
+
+.formulario {
+    display: grid;
+    grid-template-areas: "razon direccion" 
+                        "categoria correo" 
+                        "telefono cuenta"
+                         "boton boton"
+                         "title3 title3"
+                         "boton2 boton2"
+                          "table1 table1";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(8,auto);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    color: darkorange;
+}
+
+.razon {
+    grid-area: razon;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.categoria {
+    grid-area: categoria;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.direccion {
+    grid-area: direccion;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.correo {
+    grid-area: correo;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.telefono {
+    grid-area: telefono;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.cuenta {
+    grid-area: cuenta;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+}
+.boton {
+    grid-area: boton;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.title3 {
+    grid-area: title3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+    background-color: aliceblue;
+}
+
+.boton2 {
+    grid-area: boton2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.table1 {
+    grid-area: table1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+#Button1 {
+    background-color: transparent;
+    color: darkorange;
+}
+
+#Button1:hover {
+    background-color: darkorange;
+    color: white;
+    cursor: pointer;
+}
+
+th {
+    text-align: center !important;
+}
+
+td {
+    text-align: center !important;
+}

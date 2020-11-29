@@ -1,0 +1,88 @@
+﻿.title {
+    display: block;
+    background-color: gainsboro;
+    color: darkorange;
+    padding-left: 2rem;
+    padding-top: 1rem;
+    height: 50px;
+}
+
+.formulario {
+    display: grid;
+    grid-template-areas: 
+        "title1 title1" 
+        "form1 form1"
+        "boton boton"
+        "title3 title3" 
+        "boton2 boton2" 
+        "table1 table1";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(6,auto);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    color: darkorange;
+}
+
+    .formulario #title1 {
+        grid-area: title1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 3rem;
+        background-color: aliceblue;
+    }
+
+
+
+    .formulario .form1 {
+        grid-area: form1;
+        display: grid;
+        grid-template-areas: "input_descripcion" "btn_send";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(6,auto);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        color: darkorange;
+    }
+
+        .input_descripcion {
+            grid-area: input_descripcion;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 5rem;
+        }
+
+        .btn_send {
+            grid-area: btn_send;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 5rem;
+        }
+
+.title3 {
+    grid-area: title3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+    background-color: aliceblue;
+}
+
+.table1 {
+    grid-area: table1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+    overflow: auto;
+}
+
+th {
+    text-align: center !important;
+}
+
+td {
+    text-align: center !important;
+}

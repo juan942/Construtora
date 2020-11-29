@@ -1,0 +1,89 @@
+﻿.title {
+    display: block;
+    background-color: gainsboro;
+    color: darkorange;
+    padding-left: 2rem;
+    padding-top: 1rem;
+    height: 50px;
+}
+
+h2 {
+    margin: 0;
+}
+
+.formulario {
+    display: grid;
+    grid-template-areas:"title1 title1" 
+                        "asignados asignados"
+                        "title2 title2"
+                        "boton1 boton1"
+                        "boton2 boton2"
+                        "pendientes pendientes";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(6,auto);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    color: darkorange;
+}
+
+.title1 {
+    grid-area: title1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 0;
+    background-color: aliceblue;
+}
+
+.asignados {
+    grid-area: asignados;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 5rem 0;
+}
+
+.title2 {
+    grid-area: title2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 0;
+    background-color: aliceblue;
+}
+
+.pendientes {
+    grid-area: pendientes;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.boton1 {
+    grid-area: boton1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.boton2 {
+    grid-area: boton2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 3rem 0;
+}
+
+th{
+    text-align: center !important;
+}
+td {
+    text-align: center !important;
+}

@@ -1,0 +1,115 @@
+﻿.title {
+    display: block;
+    background-color: gainsboro;
+    color: darkorange;
+    padding-left: 2rem;
+    padding-top: 1rem;
+    height: 50px;
+}
+
+h2 {
+    margin: 0;
+}
+
+.formulario {
+    display: grid;
+    grid-template-areas: "ide nombre" "telefono apellido" "boton boton" "title1 title1" "boton2 boton2" "table1 table1";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(6,auto);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    color: darkorange;
+}
+
+.ide {
+    grid-area: ide;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.nombre {
+    grid-area: nombre;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.apellido {
+    grid-area: apellido;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.telefono {
+    grid-area: telefono;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.cuenta {
+    grid-area: cuenta;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.boton {
+    grid-area: boton;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.boton2 {
+    grid-area: boton2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.table1 {
+    grid-area: table1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.title1 {
+    grid-area: title1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 3rem;
+    justify-content: center;
+}
+
+#Button1 {
+    background-color: transparent;
+    color: darkorange;
+}
+
+#Button1:hover {
+    background-color: darkorange;
+    color: white;
+    cursor: pointer;
+}
+
+th {
+    text-align: center !important;
+}
+
+td {
+    text-align: center !important;
+}
+  

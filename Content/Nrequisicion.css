@@ -1,0 +1,130 @@
+﻿.title {
+    display: block;
+    background-color: gainsboro;
+    color: darkorange;
+    padding-left: 2rem;
+    padding-top: 1rem;
+}
+
+.formulario {
+    display: grid;
+    grid-template-areas: "title1 title1" "form form" "title2 title2" "actualizaT eliminar" "requisiciones requisiciones";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5,auto);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    color: darkorange;
+}
+
+.formulario .title1 {
+    grid-area: title1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 0;
+    background-color: aliceblue;
+}
+
+.formulario .form {
+    grid-area: form;
+    display: grid;
+    grid-template-areas: "calendario calendario" "inputObra inputMaterial" "inputDescripcion inputDescripcion" "Btn-send Btn-send";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 90px 90px 90px;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+
+        .calendario {
+            grid-area: calendario;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        .inputObra {
+            grid-area: inputObra;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        .inputMaterial {
+            grid-area: inputMaterial;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        .inputDescripcion {
+            grid-area: inputDescripcion;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        .Btn-send {
+            grid-area: Btn-send;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+.formulario .title2 {
+    grid-area: title2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 0;
+    background-color: aliceblue;
+}
+
+.formulario .actualizaT {
+    grid-area: actualizaT;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 0;
+    background-color: aliceblue;
+}
+
+.formulario .eliminar {
+    grid-area: eliminar;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 0;
+    background-color: aliceblue;
+}
+
+.formulario .requisiciones {
+    grid-area: requisiciones;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+
+th {
+    padding: 0.2rem 4rem;
+}
+
+tbody {
+    text-align: center;
+}
